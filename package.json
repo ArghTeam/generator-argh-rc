@@ -1,0 +1,20 @@
+{
+  "name": "generator-argh-rc",
+  "version": "1.0.0",
+  "description": "Handy generator to quickly scaffold new ReactJS components in Argh's style",
+  "files": [
+    "generators"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "ftroitsky",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^2.0.1"
+  }
+}
