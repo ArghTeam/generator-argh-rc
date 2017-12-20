@@ -1,16 +1,16 @@
 import React, {Component} from 'react'
-import {withStyles} from 'material-ui/styles'
+import nxtWrap from '../../nxtWrapper'
 
-const style = theme => ({
+const s = theme => ({
   root: {}
 })
 
-@withStyles(style)
+@nxtWrap(s)
 class <%= name %> extends Component {
   render() {
-    const {classes} = this.props
+    const {classes, children} = this.props
     return (
-      <div className = {classes.root}></div>
+      <div className = {classes.root}>{children}</div>
   )
   }
 }
