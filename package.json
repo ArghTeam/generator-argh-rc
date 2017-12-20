@@ -1,6 +1,6 @@
 {
   "name": "generator-argh-rc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Handy generator to quickly scaffold new ReactJS components in Argh's style",
   "files": [
     "generators"
