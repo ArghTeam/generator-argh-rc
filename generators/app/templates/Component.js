@@ -1,18 +1,22 @@
-import React, {Component} from 'react'
-import nxtWrap from '../../nxtWrapper'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import classnames from 'classnames'
+import { withStyles } from '@material-ui/core/styles'
 
 const s = theme => ({
   root: {}
 })
 
-@nxtWrap(s)
-class <%= name %> extends Component {
-  render() {
-    const {classes, children} = this.props
-    return (
-      <div className = {classes.root}>{children}</div>
-  )
-  }
+@withStyles(s)
+export default class <%= name %> extends Component {
+  static propTypes = {
 }
 
-export default <%= name %>
+  static defaultProps = {
+}
+
+  render () {
+  const {classes, children} = this.props
+  return <div className={classes.root}>{children}</div>
+}
+}

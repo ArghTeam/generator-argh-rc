@@ -15,6 +15,6 @@
   "author": "ftroitsky",
   "license": "MIT",
   "dependencies": {
-    "yeoman-generator": "^2.0.1"
+    "yeoman-generator": "^3.2.0"
   }
 }
