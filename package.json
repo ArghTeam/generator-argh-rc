@@ -1,5 +1,5 @@
 {
-  "name": "generator-argh-rc",
+  "name": "@argh/generator-react-component",
   "version": "1.0.6",
   "description": "Handy generator to quickly scaffold new ReactJS components in Argh's style",
   "files": [
@@ -12,6 +12,9 @@
   "keywords": [
     "yeoman-generator"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "ftroitsky",
   "license": "MIT",
   "dependencies": {
