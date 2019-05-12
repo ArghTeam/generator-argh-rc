@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
-import <%= name %> from '../src/components/<%= name %>'
+import <%= name %> from '../components/<%= name %>'
 
 
 storiesOf('<%= name %>', module)

@@ -47,7 +47,7 @@ module.exports = class extends Generator {
   createStory() {
     this.fs.copyTpl(
       this.templatePath('Story.js'),
-      this.destinationPath(`stories/${this.compName}.stories.js`),
+      this.destinationPath(`src/stories/${this.compName}.stories.js`),
       { name: this.compName }
     )
   }
