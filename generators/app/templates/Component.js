@@ -7,16 +7,16 @@ const s = theme => ({
   root: {}
 })
 
-@withStyles(s)
-export default class <%= name %> extends Component {
+class <%= name %> extends Component {
   static propTypes = {
-}
-
-  static defaultProps = {
-}
+    classes: PropTypes.array
+  }
+  static defaultProps = {}
 
   render () {
-  const {classes, children} = this.props
-  return <div className={classes.root}>{children}</div>
+    const {classes, children} = this.props
+    return <div className={classes.root}>{children}</div>
+  }
 }
-}
+
+export default withStyles(s)(<%= name %>)
