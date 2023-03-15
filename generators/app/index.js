@@ -30,23 +30,23 @@ module.exports = class extends Generator {
 
   createIndex() {
     this.fs.copyTpl(
-      this.templatePath('index.js'),
-      this.destinationPath(`src/components/${this.compName}/index.js`),
+      this.templatePath('index.ts'),
+      this.destinationPath(`src/components-ts/${this.compName}/index.js`),
       { name: this.compName }
     )
   }
 
   createComponent() {
     this.fs.copyTpl(
-      this.templatePath('Component.js'),
-      this.destinationPath(`src/components/${this.compName}/${this.compName}.js`),
+      this.templatePath('Component.tsx'),
+      this.destinationPath(`src/components-ts/${this.compName}/${this.compName}.js`),
       { name: this.compName }
     )
   }
 
   createStory() {
     this.fs.copyTpl(
-      this.templatePath('Story.js'),
+      this.templatePath('Component.stories.tsx'),
       this.destinationPath(`src/components/${this.compName}/${this.compName}.stories.js`),
       { name: this.compName }
     )
