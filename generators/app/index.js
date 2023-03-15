@@ -39,7 +39,7 @@ module.exports = class extends Generator {
   createComponent() {
     this.fs.copyTpl(
       this.templatePath('Component.tsx'),
-      this.destinationPath(`src/components-ts/${this.compName}/${this.compName}.js`),
+      this.destinationPath(`src/components-ts/${this.compName}/${this.compName}.tsx`),
       { name: this.compName }
     )
   }
@@ -47,7 +47,7 @@ module.exports = class extends Generator {
   createStory() {
     this.fs.copyTpl(
       this.templatePath('Component.stories.tsx'),
-      this.destinationPath(`src/components/${this.compName}/${this.compName}.stories.js`),
+      this.destinationPath(`src/components-ts/${this.compName}/${this.compName}.stories.tsx`),
       { name: this.compName }
     )
   }
